@@ -23,9 +23,9 @@ export default class App extends React.Component {
     render() {
         return (
             <div className="input-group">
-                <input type="text" className="form-control" placeholder="Name" ref="playerName"/>
+                <input type="text" className="form-control input-lg" placeholder="Enter the game id" ref="playerName"/>
                 <span className="input-group-btn">
-                <Link to="/score" className="btn btn-primary" onClick={this.createGame}>Enter the game</Link>
+                <Link to="/score" className="btn btn-primary btn-lg" onClick={this.createGame}>Join</Link>
               </span>
             </div>
         );

@@ -18,9 +18,9 @@ export class PlayerComponent extends React.Component {
     render() {
         return (
             <div className="input-group">
-                <input type="text" className="form-control" placeholder="Name" ref="playerName"/>
+                <input type="text" className="form-control input-lg" placeholder="Name" ref="playerName"/>
                 <span className="input-group-btn">
-                    <button className={styles.leftButton + " btn btn-default"} type="button" onClick={this.save}>Save</button>
+                    <button className={styles.leftButton + " btn btn-default btn-lg"} type="button" onClick={this.save}>Save</button>
                   </span>
             </div>
         );
