@@ -64,7 +64,7 @@ export class PlayerScoreComponent extends React.Component {
                     </span> 
                     <input type="number" className="form-control" ref="score" disabled={this.state.disabled} />
                     <span className="input-group-btn">
-                        <button className="btn btn-success" type="button"
+                        <button className={styles.leftButton + " btn btn-success"} type="button"
                                 onClick={score => this.updateScore()}>{this.props.player.name} - {this.state.score}</button>
                     </span>
                 </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from "../css/App.css";
 
 export class PlayerComponent extends React.Component {
 
@@ -19,7 +20,7 @@ export class PlayerComponent extends React.Component {
             <div className="input-group">
                 <input type="text" className="form-control" placeholder="Name" ref="playerName"/>
                 <span className="input-group-btn">
-                    <button className="btn btn-default" type="button" onClick={this.save}>Save</button>
+                    <button className={styles.leftButton + " btn btn-default"} type="button" onClick={this.save}>Save</button>
                   </span>
             </div>
         );
