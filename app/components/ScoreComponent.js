@@ -20,7 +20,6 @@ export default class ScoreComponent extends React.Component {
         if (name.length) {
             players.push({name: name, score: 0});
             this.setState({players: players});
-            console.log("new players", this.state.players);
         }
     };
 
